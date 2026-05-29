@@ -17,6 +17,26 @@ while True:
 
     if results.multi_hand_landmarks:
         for hand_landmarks in results.multi_hand_landmarks:
+
+            for id, lm in enumerate(hand_landmarks.landmark):
+
+                h, w, c = img.shape
+
+                cx = int(lm.x * w)
+                cy = int(lm.y * h)
+
+                print(id, cx, cy)
+
+                cv2.putText(
+                    img,
+                    str(id),
+                    (cx, cy),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.5,
+                    (255, 0, 0),
+                    2
+                )
+
             mp_draw.draw_landmarks(
                 img,
                 hand_landmarks,
