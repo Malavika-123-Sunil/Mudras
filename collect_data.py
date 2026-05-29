@@ -58,9 +58,73 @@ while True:
                     writer.writerow(landmark_list)
 
                 print("Mushti saved")
+                
+                
+            if key == ord('t'):
 
+                with open('dataset.csv', 'a', newline='') as f:
+
+                    writer = csv.writer(f)
+
+                    landmark_list.append("Thripathaaka")
+
+                    writer.writerow(landmark_list)
+
+                print("Thripathaaka saved")
+                
+            
+            if key == ord('a'):
+
+                with open('dataset.csv', 'a', newline='') as f:
+
+                    writer = csv.writer(f)
+
+                    landmark_list.append("Ardhapathaaka")
+
+                    writer.writerow(landmark_list)
+
+                print("Ardhapathaaka saved")
+                
+            if key == ord('k'):
+
+                with open('dataset.csv', 'a', newline='') as f:
+
+                    writer = csv.writer(f)
+
+                    landmark_list.append("KartariMukham")
+
+                    writer.writerow(landmark_list)
+
+                print("KartariMukham saved")
+            
+            if key == ord('y'):
+
+                with open('dataset2.csv', 'a', newline='') as f:
+
+                    writer = csv.writer(f)
+
+                    landmark_list.append("Mayuram")
+
+                    writer.writerow(landmark_list)
+
+                print("Mayuram saved")
+                
+            if key == ord('r'):
+
+                with open('dataset2.csv', 'a', newline='') as f:
+
+                    writer = csv.writer(f)
+
+                    landmark_list.append("Aralam")
+
+                    writer.writerow(landmark_list)
+
+                print("Aralam saved")
+                
+            
+            
+            
     cv2.imshow("Collect Data", img)
-
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
