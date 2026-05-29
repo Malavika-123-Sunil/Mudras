@@ -1,4 +1,4 @@
-# Mudras
+# Asamyuta Hasta Mudras
 
 AI-powered Bharatanatyam Mudra Recognition System using Computer Vision and MediaPipe.
 
@@ -22,9 +22,7 @@ The system detects hand landmarks through a webcam, analyzes finger positions, a
 - Python
 - OpenCV
 - MediaPipe
-- Scikit-learn / TensorFlow
-- Git & GitHub
-
+- Scikit-learn
 
 ## Author
 
